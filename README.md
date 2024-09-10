@@ -60,6 +60,7 @@ python manage.py createsuperuser
 ### 4. Run the server
  ```bash
 python manage.py runserver
+```
 # REACT FRONTEND 
 ## Prerequisites
 - Node.js (v14.x or later)
