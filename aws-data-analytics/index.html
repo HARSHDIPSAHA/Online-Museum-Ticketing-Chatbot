@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Museum Data Plot</title>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <h1>Museum Data</h1>
+  <div id="plot"></div>
+
+  <script>
+    // Fetch data from the Node.js server
+    fetch('http://localhost:3000/data')
+      .then(response => response.json())
+      .then(data => {
+        const { museums, adults, kids } = data;
+
+        // Create the plot
+        const trace1 = {
+          x: museums,
+          y: adults,
+          type: 'bar',
+          name: 'Adults'
+        };
+
+        const trace2 = {
+          x: museums,
+          y: kids,
+          type: 'bar',
+          name: 'Kids'
+        };
+
+        const layout = {
+          barmode: 'group',
+          xaxis: {
+            title: 'Museum Name'
+          },
+          yaxis: {
+            title: 'Number of Visitors'
+          },
+          title: 'Number of Adults and Kids for Different Museums'
+        };
+
+        Plotly.newPlot('plot', [trace1, trace2], layout);
+      })
+      .catch(error => console.error('Error fetching data:', error));
+  </script>
+</body>
+</html>
