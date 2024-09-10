@@ -38,6 +38,7 @@ This project is a Django-based backend for managing diabetes patient data, provi
 ### 1. Clone the repository
  ```bash
 git clone <https://github.com/HARSHDIPSAHA/SIH1648_ERROR_404_CHANGE_FOUND>
+```
 ### 2. Create and activate a virtual environment
  ```bash
 python3 -m venv venv
@@ -53,8 +54,9 @@ pip install -r requirements.txt
  ```bash
 python manage.py migrate
 ```
- ```bash
 ### 3. Start the development server
+ ```bash
+
 python manage.py createsuperuser
 ```
 ### 4. Run the server
