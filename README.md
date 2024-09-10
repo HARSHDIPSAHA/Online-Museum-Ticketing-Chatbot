@@ -54,8 +54,38 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
  ```bash
+### 3. Start the development server
 python manage.py createsuperuser
 ```
 ### 4. Run the server
  ```bash
 python manage.py runserver
+# REACT FRONTEND 
+## Prerequisites
+- Node.js (v14.x or later)
+- npm (v6.x or later) or yarn.
+
+## Setup instructions 
+
+### 1. Clone the repository 
+```bash
+git clone <https://github.com/HARSHDIPSAHA/SIH1648_ERROR_404_CHANGE_FOUND>
+
+```
+### 2. Install the dependencies 
+ ```bash
+npm install
+npm install react-scripts 
+npm install react-router-dom
+```
+```bash
+npm start
+```
+### 4. Build for production (optional)
+ ```bash
+npm run build
+```
+### 5. For Backend Integration 
+```bash 
+npm install axios
+
