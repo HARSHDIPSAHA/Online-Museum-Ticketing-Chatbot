@@ -19,3 +19,22 @@ This README provides an overview of the project, including team details, relevan
 
 - **Live Deployment:** [View Deployment](https://willowy-toffee-89c6b8.netlify.app/)
 
+
+
+**Run locally**
+## Local Setup Instructions (Write for both windows and macos)
+
+Follow these steps to run the project locally
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/codebreaker32/SIH_INTERNAL_ROUND_1_ERROR_404_CHANGE_FOUND
+   cd REPO_DIRECTORY
+   ```
+
+# Django Backend 
+
+This project is a Django-based backend for managing diabetes patient data, providing user authentication, patient data handling, and integration with machine learning models for outcome predictions and recommendations.
+### 1. Clone the repository
+ ```bash
+git clone <https://github.com/HARSHDIPSAHA/SIH1648_ERROR_404_CHANGE_FOUND>
