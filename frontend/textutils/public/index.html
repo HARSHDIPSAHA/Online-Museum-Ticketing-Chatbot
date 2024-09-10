@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<head>
+    <title>Home – NCSM</title>
+    <meta name="viewport" content='width-device-width, initial-scale=1'>
+
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
+
+
+    <link href="https://ncsm.gov.in/assets/css/style.css" rel="stylesheet">
+    <link href="https://ncsm.gov.in/assetsnew/css/bootstrap.css" rel="stylesheet" type="text/css">
+    
+    <link href="https://ncsm.gov.in/assets/img/favicon1.png" rel="icon">
+
+    <link href="https://ncsm.gov.in/assetsnew/css/style.css?ver=1.2.6" rel="stylesheet" type="text/css">
+    
+    
+    <link href="https://ncsm.gov.in/assetsnew/vendor/owl-carousel/css/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="https://ncsm.gov.in/assetsnew/colors/color1.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Default styles for desktop */
+        df-messenger {
+            z-index: 9999999;
+            position: fixed;
+            --df-messenger-font-color: #000;
+            --df-messenger-font-family: Roboto Mono;
+            --df-messenger-chat-background: #E7EFFE;
+            --df-messenger-message-user-background: #C6DAFC;
+            --df-messenger-message-bot-background: #FEF8E6;
+            bottom: 16px;
+            right: 16px;
+            width: 100px; /* Suitable for desktop */
+            height: 80px; /* Suitable for desktop */
+            max-width: none;
+            max-height: none;
+        }
+    
+        /* Styles for mobile devices */
+        @media only screen and (max-width: 768px) {
+            df-messenger {
+                bottom: 10px;
+                right: 10px;
+                width: 90vw; 
+                height: 50vh; 
+                max-width: 300px; 
+                max-height: 400px; 
+                box-sizing: border-box; 
+            }
+        }
+    </style>
+    
+    
+    
+</head>
+<body>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <script>
+    // Wait until the document is fully loaded
+    document.addEventListener('DOMContentLoaded', function () {
+        // Set up a mutation observer to detect changes in the DOM (useful for dynamic chat messages)
+        var observer = new MutationObserver(function (mutations) {
+            mutations.forEach(function (mutation) {
+                // For each added node, check if it's a link
+                mutation.addedNodes.forEach(function (node) {
+                    if (node.nodeType === 1 && node.tagName === 'A') {
+                        node.setAttribute('target', '_blank');
+                    }
+                });
+            });
+        });
+
+        // Observe the chatbot container for changes
+        var chatbotContainer = document.querySelector('df-messenger');
+        if (chatbotContainer) {
+            observer.observe(chatbotContainer, { childList: true, subtree: true });
+        }
+
+        // Apply _blank to any existing links inside the chatbot on page load
+        setTimeout(function () {
+            var links = chatbotContainer.querySelectorAll('a');
+            links.forEach(function (link) {
+                link.setAttribute('target', '_blank');
+            });
+        }, 1000); // Small delay to allow the chatbot to load its content
+    });
+</script>
+
+<df-messenger
+  location="asia-south1"
+  project-id="museum-booker"
+  agent-id="fb50c121-4672-48e6-ae4f-cf3c41283242"
+  language-code="en"
+  max-query-length="-1"
+  allow-feedback="all">
+  <df-messenger-chat-bubble
+   chat-title="Exhibit Ease">
+  </df-messenger-chat-bubble>
+</df-messenger>
+    <div class="home header-style3 en">
+    <div class="body">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-3 col-xs-3 col-3">
+                        <p>24/08/2024 01:50:11 AM IST</p>
+                    </div>
+                    <div class="col-md-6 col-sm-2 col-xs-3 col-3 hdr-tp-br skip-menu">
+                        <span> <i class="fa fa-arrow-down"></i> Skip to main content</span>
+                        <span><i class="fa fa-arrow-down"></i> Skip to navigation </span>
+                        <span><i class="fa fa-volume-up"></i>Screen Reader Access </span>
+                    </div>
+
+                    <div class="col-md-3 col-sm-2 col-xs-7 col-7">
+                        <ul class=" social-icons-colored hdr-tp-icn">
+                            <li class="facebook">A</li>
+                            <li class="wt-bg">A</li>
+                            <li class="bn">A-</li>
+                            <li class="bn">A</li>
+                            <li class="bn">A+</li>
+                                    <li>
+                                        हिन्दी
+                                        </li>
+                                    </ul>
+<form class="srh-rt"> 
+    <input type="text" name="search" class="searchbar-input" id="search" required="" aria-label="Search" placeholder="Search" value=""> 
+</form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="site-header-wrapper new">
+            <header class="site-header main-navbar main-navbar-3">
+                <div class="container sp-cont">
+                    <div class="site-logo">
+                        <a href="#">
+                                                            <img class ="logo" src="logo-main.png" alt="NCSM"/>
+                                                    </a>
+                        </h1>
+                    </div>
+                </div>
+            </header>
+            <div class="main-navbar main-navbar-2">
+                <div class="container">
+                    <nav class="main-navigation dd-menu toggle-menu" role="navigation">
+                        <ul class="sf-menu menu-main-list mainmenu" role="menu">
+                            <li class = "" id = ""  role = "">
+                                                    <a href = "#">
+                                                                <span class="menu-main-label">Home</span></a>
+                                                    </li>
+                                                    <li class="" id="menuitem_1" role="menuitem">
+                                                        <a href = "#">
+                                                                    <span class="menu-main-label">About Us</span></a>
+                                                        </li>
+                                                        <li class="" id="menuitem_1" role="menuitem">
+                                                            <a href = "#">
+                                                                        <span class="menu-main-label">Network</span></a>
+                                                            </li>
+                                                            <li class="" id="menuitem_1" role="menuitem">
+                                                                <a href = "#">
+                                                                            <span class="menu-main-label">Activities</span></a>
+                                                                </li>
+                                                                <li class="" id="menuitem_1" role="menuitem">
+                                                                    <a href = "#">
+                                                                                <span class="menu-main-label">Expertise</span></a>
+                                                                    </li>
+                                                                    <li class="" id="menuitem_1" role="menuitem">
+                                                                        <a href = "#">
+                                                                                    <span class="menu-main-label">Gallery</span></a>
+                                                                        </li>
+                                                                        <li class="" id="menuitem_1" role="menuitem">
+                                                                            <a href = "#">
+                                                                                        <span class="menu-main-label">Notice</span></a>
+                                                                            </li>
+                                                                            <li class="" id="menuitem_1" role="menuitem">
+                                                                                <a href = "#">
+                                                                                            <span class="menu-main-label">Media</span></a>
+                                                                                </li>
+                                                                                <li class="" id="menuitem_1" role="menuitem">
+                                                                                    <a href = "#">
+                                                                                                <span class="menu-main-label">Resources</span></a>
+                                                                                    </li>
+                                                                                    <li class="" id="menuitem_1" role="menuitem">
+                                                                                        <a href = "#">
+                                                                                                    <span class="menu-main-label">Contact Us</span></a>
+                                                                                        </li>
+                                                                                        <li class="" id="menuitem_1" role="menuitem">
+                                                                                            <a href = "#">
+                                                                                                        <span class="menu-main-label">Donate</span></a>
+                                                                                            </li>
+                                                                                        </ul></nav></div></div>
+                                                                                  
+                                                                                            
+                                                                                        <style>
+                                                                                           
+.main-navigation .menu-main-list li {
+    font-size: 11px !important; 
+    padding: 0 5px !important;  
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-navigation .menu-main-list {
+    display: flex; 
+    flex-wrap: nowrap; 
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
+                                                                                            
+                                                                                       
+                                                                                    </style>
+                                                                                    
+                                                                                        <section class="ncsm-video">
+             
+             
+            
+                                                                                            <video muted loop id="myVideo" style="margin: 0 auto; width: 100%;" poster="https://ncsm.gov.in/15thaug.webp?ver=2.7">
+                                                                                                <source src="https://ncsm.gov.in/storage/settings/ncsm-banner-video.webm?ver=1.9" type="video/webm">
+                                                                                            </video>
+                                                                                        </section>   
+                                                                                        <div class="about-btm">
+                                                                                            <div class="container">
+                                                                                                <div class="row">
+                                                                                                    <div class="col-md-2 ncsm-mid"> 
+                                                                                                        <img src="https://ncsm.gov.in/storage/settings/msum_1.png">
+                                                                                                    </div>
+                                                                                                    <div class="col-md-8 spancol">
+                                                                                                    <h3>largest network of <strong>science centres and museums</strong> in the world</h3>
+                                                                                
+                                                                                <h4>under single administrative umbrella</h4>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                
+                                                                                        </div>
+                                                                                        <div class="section-full bg-white content-inner">
+                                                                                            <div class="container">
+                                                                                                <div class="section-content">
+                                                                                                    <div class="row">
+                                                                                                        <div class="col-md-12 ncab" style="text-align: justify; margin-bottom: 0;">
+                                                                                                            <h2 class="h2 m-t0 wow animate__slideInLeft" data-wow-delay="500ms">Welcome To <strong>NCSM </strong></h2>
+                                                                                                            <div class="rdx-separator bg-primary"></div>
+                                                                                                                                        <img class="wow animate__zoomIn" alt="map" data-wow-duration="2s" src="https://ncsm.gov.in/storage/files/ncsm-map-01.png" alt="NCSM Network">
+                                                                                                                
+                                                                                                            <div class="animate__slideInLeft sci-net wow" data-wow-delay="500ms"><strong>THE LARGEST NETWORK OF SCIENCE CENTRES/MUSEUMS IN THE WORLD</strong><br />
+                                                                                    <br />
+                                                                                    <strong>National Council of Science Museums (NCSM), </strong> an autonomous society under the <strong>Ministry of Culture, Government of India </strong> was formed on April 4, 1978. Today, it administers 26 Science Centres/Museums spread all over India.<br />
+                                                                                    <br />
+                                                                                    NCSM has developed its own Nationwide network of 26 Science Museums/Centres. Among 26 centres, divided into North, South, East, North East and West Zones, there are 6 National Level Centres namely Science City, Kolkata, Birla Industrial and Technological Museum (BITM), Kolkata, Nehru Science Centre (NSC), Mumbai, Visvesvaraya Industrial and Technological Museum (VITM), Bengaluru, National Science Centre (NSC), Delhi and Central Research &amp; Training Laboratory, Kolkata.<br />
+                                                                                    <br />
+                                                                                    <a href="#">Read More ...</a></div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="three-tabs">
+                                                                                            <div class="three-tabs-bg">
+                                                                                                <div class="container sci-main">
+                                                                                                    <h3>
+                                                                                                    <p>Celebrating Azadi Ka Amrit Mahotsav</p>
+                                                                                                    </h3>
+                                                                                                </div>
+                                                                                                <div class="container-fluid notice-bg-clr">
+                                                                                                    <div class="container">
+                                                                                                        <div class="row mb-scien">
+                                                                                                            <div class="about-sec-main">
+                                                                                                                <div class="container">
+                                                                                                                    <div class="row">
+                                                                                                                        <div class="panel panel-primary">
+                                                                                                                            <div class="panel-heading">
+                                                                                                                                <span class="pull-left">
+                                                                                                                                    <ul class="nav panel-tabs">
+                                                                                                                                        <li class="active">Mobile Science Exhibition</li>
+                                                                                                                                        <li>Innovation Hub</li>
+                                                                                                                                        <li>Virtual Gallery</li>
+                                                                                                                                        <li>Facebook Live</li>
+                                                                                                                                        <li>Videos</li> 
+                                                                                                                 </ul>
+                                                                                        </span>
+                                                                                    </div>
+                                <style>
+                                    .panel-heading {
+                                        background-color: #f8f9fa; 
+                                        padding: 10px 15px; 
+                                        border-bottom: 1px solid #ddd; 
+                                    }
+                                    
+                                    .nav.panel-tabs {
+                                        list-style: none; 
+                                        padding: 0;
+                                        margin: 0;
+                                        display: flex; 
+                                    }
+                                    
+                                    .nav.panel-tabs li {
+                                        margin-right: 20px; 
+                                        padding: 10px 15px; 
+                                        cursor: pointer; 
+                                        border-radius: 4px;
+                                        transition: background-color 0.3s, color 0.3s; 
+                                        color: #6c757d; 
+                                    }
+                                    
+                                    .nav.panel-tabs li.active {
+                                        background-color: #007bff; 
+                                        color: #fff; 
+                                    }
+                                    
+                                    .nav.panel-tabs li.inactive {
+                                        background-color: #ced4da; 
+                                    }
+                                    
+                                    .nav.panel-tabs li:hover {
+                                        background-color: #f1f1f1; 
+                                        color: #495057; 
+                                    }
+                                    
+                                </style>                                    
+                                                                                                                            <div class="panel-body">
+                                                                                                                                <div class="tab-content">
+                                                                                                                                    <div class="tab-pane active" id="tab1">
+                                                                                                                                        <div class="pan-box-main">
+                                                                                                                                            <div class="row">
+                                                                                                                                                <div class="col-md-4">
+                                                                                    <div class="animate__rotateInDownLeft hdr-bnr-rig img-cntnt wow" data-wow-duration="1s" style="animation-duration:1s; animation-name:rotateInDownLeft; margin-bottom:30px; visibility:visible"><img alt="" src="https://ncsm.gov.in/assetsnew/images/mob.jpg" /></div>
+                                                                                    
+                                                                                    <div class="img-cntnt"><img alt="" src="https://ncsm.gov.in/assetsnew/images/mob-5.jpg" /></div>
+                                                                                    </div>
+                                                                                    <div class="animate__rotateInDownRight col-md-4 hdr-bnr-rig wow" data-wow-duration="1s" style="animation-duration:1s; animation-name:rotateInDownRight; visibility:visible">
+                                                                                        <div class="img-cntnt" style="margin-bottom:30px"><img alt="" src="https://ncsm.gov.in/assetsnew/images/mob-6.jpg" /></div>
+                                                                                        
+                                                                                        <div class="img-cntnt"><img alt="" src="https://ncsm.gov.in/assetsnew/images/mb-4.jpg" /></div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="animate__zoomIn col-md-4 hdr-bnr-rig wow" data-wow-duration="2s" style="animation-duration:2s; animation-name:zoomIn; visibility:visible">
+                                                                                        <div class="text-cntnt text-cntnt-2">
+                                                                                        <h2>Mobile Science Exhibition</h2>
+                                                                                        
+                                                                                        <p>Mobile Science Exhibition (MSE) are basically science exhibitions on buses based on various themes of science and technology. Mobile Science Exhibition is an attempt of NCSM to communicate science in rural areas.</p>
+                                                                                        
+                                                                                        <p>Ministry of Culture, Govt of India, has taken a drive to launch 25 MSE buses in 2019-20 in the Aspirational Districts of India. The Govt. of India aims to uplift the districts which have shown relatively lesser progress in achieving key social outcome through a mass movement to quickly and effectively transform some districts named as ‘Aspirational Districts’.</p>
+                                                                                        Know More</div>
+                                                                                        </div>
+
+                                                                                                                                                </div>
+                                                                                                                                            </div>
+                                                                                                                                        </div>
+                                                                                                                                        <div class="tab-pane" id="tab3">
+                                                                                                                                            <div class="pan-box-main">
+                                                                                                                                                <div class="row">
+                                                                                                                                                  <div class="col-md-4">
+                                                                                        <div class="img-cntnt" style="margin-bottom:30px"><img alt="" src="https://ncsm.gov.in/assetsnew/images/v-glry-1.jpg" /></div>
+                                                                                        
+                                                                                        <div class="img-cntnt"><img alt="" src="https://ncsm.gov.in/assetsnew/images/v-glry-3.jpg" /></div>
+                                                                                        </div>
+                                                                                        
+                                                                                        <div class="col-md-4">
+                                                                                        <div class="img-cntnt" style="margin-bottom:30px"><img alt="" src="https://ncsm.gov.in/assetsnew/images/v-glry-2.jpg" /></div>
+                                                                                        
+                                                                                        <div class="img-cntnt"><img alt="" src="https://ncsm.gov.in/assetsnew/images/v-glry-4.jpg" /></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            
+                                    <div class="dgray-bg dgray-bg-2">
+                                        <div class="padding-tb45 ">
+                                            <div class="container">
+                                                <h3 class="widget-title widget-title-2 wow animate__fadeInDown" data-wow-duration="1s">
+                                                    <strong>PAST EVENTS</strong>
+                                                </h3>
+                                                <div class="row">
+                                                    <!-- First Static Event -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="featured-block featured-block-secondary format-standard ooo">
+                                                            <figure>
+                                                                <img src="past_event.png" alt="" height="266" />
+                                                            </figure>
+                                                            <div class="featured-block-in">
+                                                                <h3 style="min-height: 55px;">Vidyarthi Vigyan Manthan (VVM)</h3>
+                                                                <h4>August 23, 2023</h4><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Second Static Event -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="featured-block featured-block-secondary format-standard ooo">
+                                                            <figure>
+                                                                <img src="https://ncsm.gov.in/storage/files/whatsapp-image-2023-08-05-at-184015-319x266.jpeg?token=f84d681eb306532ec760ea1a39f48840" alt="" height="266" />
+                                                            </figure>
+                                                            <div class="featured-block-in">
+                                                                <h3 style="min-height: 55px;">International Travelling Exhibition “Vaccines Injecting ...</h3>
+                                                                <h4>August 5, 2023</h4><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Third Static Event -->
+                                                    <div class="col-md-4 mb-4">
+                                                        <div class="featured-block featured-block-secondary format-standard ooo">
+                                                            <figure>
+                                                                <img src="https://ncsm.gov.in/storage/files/microsoftteams-image-23-319x266.png?token=4cd10bf78972e02ea0df9fadeda318f1" alt="" height="266" />
+                                                            </figure>
+                                                            <div class="featured-block-in">
+                                                                <h3 style="min-height: 55px;">Inauguration of Sub-Regional Science Centre and Innovation...</h3>
+                                                                <h4>July 20, 2023</h4><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="lgray-bg padding-tb45 blgs-sec">
+                                        <div class="blg-div-main">
+                                            <div class="container blog-title">
+                                                <h3 class="widget-title widget-title-2 wow animate__fadeInDown" data-wow-duration="1s"><strong>BLOG</strong></h3>
+                                                <div class="carousel-wrapper blogsec">
+                                                    <div class="row">
+                                                        <ul class="owl-carousel carousel-fw" id="news-slider">
+                                                            <!-- BLOG ITEM 1 -->
+                                                            <li class="item">
+                                                                <div class="grid-item format-standard">
+                                                                    <img class="tender-list-item-image" src="https://ncsm.gov.in/storage/files/medium-1994-0447-319x213.jpg?token=0cfee19fcb887604a29e37363751133c" alt="">
+                                                                    <span class="grid-item-date">
+                                                                        <span class="grid-item-day"> 7 </span>
+                                                                        <span class="grid-item-month">Dec,22</span>
+                                                                    </span>
+                                                                    <div class="grid-item-content">
+                                                                        <h3 style="color: #1E90FF; min-height:55px;">CORONAVIRUS A REVOLUTIONARY VACCINE</h3>
+                                                                        <div class="grid-item-excerpt">
+                                                                            <p>In the global race to curb the pandemic, scientists are testing a new kind of vaccine...</p>
+                                                                        </div>
+                                                                        <a href="#">Read more</a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!-- BLOG ITEM 2 -->
+                                                            <li class="item">
+                                                                <div class="grid-item format-standard">
+                                                                    <img class="tender-list-item-image" src="https://ncsm.gov.in/storage/files/49530315718-d43ceca61a-k-1536x1200_1-319x213.jpg?token=4f8acfaad24887d680f259cfceabfaa2" alt="">
+                                                                    <span class="grid-item-date">
+                                                                        <span class="grid-item-day"> 2 </span>
+                                                                        <span class="grid-item-month">Dec,22</span>
+                                                                    </span>
+                                                                    <div class="grid-item-content">
+                                                                        <h3 style="color: #1E90FF; min-height:55px;">CLIMATE CHANGE WHY SHOULD WE CARE? PANEL DISCUSSION</h3>
+                                                                        <div class="grid-item-excerpt">
+                                                                            <p>With these powerful words, conservationist Dr Jane Goodall captured the mood of a global panel in discussing the climate emergency...</p>
+                                                                        </div>
+                                                                        <a href="#">Read more</a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                            <!-- BLOG ITEM 3 -->
+                                                            <li class="item">
+                                                                <div class="grid-item format-standard">
+                                                                    <img class="tender-list-item-image" src="https://ncsm.gov.in/storage/files/martin-sanchez-j2c7yf223mk-unsplash-1920x600-319x213.jpg?token=51bf9daafb9049cd147c166848dd38a2" alt="">
+                                                                    <span class="grid-item-date">
+                                                                        <span class="grid-item-day"> 30 </span>
+                                                                        <span class="grid-item-month">Nov,22</span>
+                                                                    </span>
+                                                                    <div class="grid-item-content">
+                                                                        <h3 style="color: #1E90FF; min-height:55px;">CORONAVIRUS VACCINATING THE WORLD</h3>
+                                                                        </a>
+                                                                        <div class="grid-item-excerpt">
+                                                                            <p>The world’s biggest vaccine manufacturer is the Serum Institute of India...</p>
+                                                                        </div>
+                                                                        <a href="#">Read more</a>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <style>
+                                            .carousel-wrapper {
+                                                display: flex;
+                                                justify-content: center;
+                                            }
+                                            
+                                            .owl-carousel {
+                                                display: flex;
+                                                flex-direction: row;
+                                                gap: 20px; 
+                                            }
+                                            
+                                            .item {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center; 
+                                                flex: 1; 
+                                                max-width: 300px; 
+                                            }
+                                            
+                                            .grid-item {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                            }
+                                                             
+                                        </style>
+                                        </div>
+                                    </div>
+                                    <div class=" notice-main">
+                                        <div class="notice-body">
+                                            <div class="container">
+                                                <h3 class="widget-title widget-title-2 wow animate__fadeInDown" data-wow-duration="1s">
+                                                    <strong>Latest</strong>
+                                                </h3>
+                                                
+                                                <div class="row publications-row">
+                                                    <!-- First Static Publication -->
+                                                    <div class="featured-block featured-block-secondary format-standard">
+                                                        <div class="featured-block-in">
+                                                            <h3 style="min-height: 54px;">Recruitment of Curators and Office Assistant (Gr. 1) - Ad...</h3>
+                                                            <p style="min-height: 70px;">View and Download Question Paper</p>
+                                                            <h4>10 June, 2024</h4>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <!-- Second Static Publication -->
+                                                    <div class="featured-block featured-block-secondary format-standard">
+                                                        <div class="featured-block-in">
+                                                            <h3 style="min-height: 54px;">Previous Years Question Paper for LDCE reg.</h3>
+                                                            <p style="min-height: 70px;">View and Download Question Paper</p>
+                                                            <h4>20 May, 2024</h4>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <!-- Third Static Publication -->
+                                                    <div class="featured-block featured-block-secondary format-standard">
+                                                        <div class="featured-block-in">
+                                                            <h3 style="min-height: 54px;">Question Paper of SMO</h3>
+                                                            <p style="min-height: 70px;">View and Download Question Paper</p>
+                                                            <h4>4 March, 2024</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- CSS -->
+                                            <style>
+                                                .publications-row {
+                                                    display: flex;
+                                                    justify-content: space-between;
+                                                    gap: 20px; 
+                                                }
+                                            
+                                                .featured-block {
+                                                    background-color: #f8f9fa;
+                                                    border: 1px solid #ddd;
+                                                    padding: 15px;
+                                                    flex: 1; 
+                                                    text-align: center;
+                                                }
+                                            
+                                                .featured-block-in h3, .featured-block-in p, .featured-block-in h4 {
+                                                    margin: 10px 0;
+                                                }
+                                            </style>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <footer class="site-footer">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="widget footer-widget">
+                                                    <h4 class="widget-title">LOCATION</h4>
+                                                    <!-- <img src="images/logo.png" alt=""><br><br> -->
+                                                    <div class="footer-icons">
+                                                        <div class="icon-left"><i class="fa fa-home"></i></div>
+                                                        <div class="icon-right">
+                                                            33, Block - GN, Sector - V, Bidhan Nagar Kolkata 700 091 West Bengal, India
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-icons">
+                                                        <div class="icon-left"><i class="fa fa-phone"></i></div>
+                                                        <div class="icon-right">
+                                                            <p>(91) (033) 2357 9347</p>
+                                                            <p>(91) (033) 2357 0850</p>
+                                                            <p>(91) (033) 2357 6008</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="footer-icons footer-icons-left">
+                                                        <div class="icon-left"><i class="fa fa-envelope"></i></div>
+                                                        <div class="icon-right">sciencecentre[at]ncsm[dot]gov[dot]in</div>
+                                                    </div>
+                                                    <div class="footer-icons footer-icons-left">
+                                                        <div class="icon-left"><i class="fa fa-map"></i></div> Find us on map </a>
+                                                    </div>
+                            
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="widget footer-widget">
+                                                    <h4 class="widget-title">LIKE US ON FACEBOOK</h4>
+                                                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fncsmgoi%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="300"
+                                                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6">
+                                                <div class="widget footer-widget widget_links">
+                                                    <h4 class="widget-title">SCIENCE CENTRE</h4>
+                                                    <!-- <ul>
+                                                        <li><a href="#">Krishna Nair on Superbugs Exhibition and the Saga of raise and fall of Antibiotics</a></li>
+                                                        <li><a href="#">Saroj Batra on Why antibiotics are important</a></li>
+                                                        <li><a href="#">Rahul Rawat on Science behind Holi, the festival of Colours</a></li>
+                                                        <li><a href="#"> Ravi Maggo on Science behind Holi, the festival of Colours</a></li>
+                                                        <li><a href="#">Vishwas on Superbugs Exhibition and the Saga of raise and fall of Antibiotics</a></li>
+                                                    </ul> -->
+        
+                                                    <ul>
+                                                        <li>Inauguration of Udaipur Science Centre, Udaipur</a></li>
+                                                        <li>Inauguration of Bargarh Science Centre, Bargarh, Odisha</a></li>
+                                                        <li>Sub-Regional Science Centre, Jodhpur
+                            </a></li>
+                                                        <li>Regional Science Centre, Coimbatore
+                            </a></li>                   <li>Jorhat Science Centre & Planetarium
+                            </a></li>
+                            
+                                                    </ul>
+                                                                        </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 footer-subscribe">
+                                                <div class="widget footer-widget">
+                                                    <h4 class="widget-title">SUBSCRIBE NEWSLETTER</h4>
+                                                    <form onsubmit="return subsc()">
+                                                        <input type="hidden" name="_token" value="H8z7NPEn5UBQmXTvSMdHDxo9SxoXGyj62z0oT82o">                            <input type="email"  name="email" id="emailnews" class="form-control newsletter-form" aria-describedby="emailHelp" placeholder="Enter email" required>
+                                                        <input type="submit" class="survey-btn" name="smbt" value="SUBSCRIBE">
+                                                        <p><span class="mssg"></span></p>
+                                                    </form>
+                                                </div><br><br>
+                                                <div class="widget footer-widget">
+                                                    <h4 class="widget-title">VISITS</h4>
+                                                       
+                                                </div><br><br><br>
+                                                <div class="widget footer-widget footer-widget-last">
+                                                    <h4><b class="up">LAST UPDATE  :</b> 24/08/2024</h4>
+                                                </div>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                </footer>
+                            
+                                    <footer class="site-footer-bottom">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-6 copyrights-left">
+                                                <p>Supports: Firefox 16+ Google Chrome 26+ Internet Explorer 10+ Safari 15+</p>
+                                                <p>Designed, Developed and Maintained by WEBSTEP TECHNOLOGIES PRIVATE LIMITED</p>
+                                                <p>Copyright &copy; 2024 National Council of Science Museums</p>
+                                            </div>
+                                            <div class="col-md-4 col-sm-6 copyrights-right">
+                                                <ul class="pull-right social-icons-colored">
+                                                    <li class="facebook"><i class="fa fa-facebook-f"></i></li>
+                                                    <li class="twitter"><i class="fa fa-twitter"></i></li>
+                                                    <li class="instagram"></i></li>
+                                                    <li class="instagram"></i></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            
+                                                    
+    </div>
+
+    <style>
+        .new .sticky-wrapper.is-sticky {
+            position: relative;
+            z-index: 999;
+        }
+        
+        div#undefined-sticky-wrapper:nth-child(1) {
+            height: 95px !important;
+        }
+        
+        .grid-item-content h3 a:hover {
+            opacity: 0.7;
+        }
+        
+        .grid-item-content h3 a {
+            color: #2f4f4f;
+            font-weight: 700;
+        }
+        
+        .grid-item-content:hover {
+            background: #ebeaf0;
+        }
+        
+        .meta-data a:hover {
+            color: #2f4f4f;
+            opacity: 0.7;
+        }
+        
+        .owl-carousel .item:nth-child(1) {
+            margin-left: 34px;
+        }
+        
+        .mchx li {
+            list-style: square;
+        }
+        .spancol strong{ font-weight: normal; color: #ffe952;}
+        .site-logo h1{padding-top: 21px;}
+    </style>
+  </body>
+</html> 
