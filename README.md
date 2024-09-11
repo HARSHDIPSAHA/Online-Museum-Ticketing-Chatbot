@@ -1,4 +1,11 @@
 This README provides an overview of the project, including team details, relevant links, tasks completed, tech stack, key features, and steps to run the project locally.
+**About Project**
+1. 24*7 multilingual chatbot support.
+2. Recording every person museum selection response and storing it in database to predict which time has most crowd and alert the upcoming travellers.
+3. Using Machine Learning to neglect spelling errors and GenAI to block hate contents.
+4. Using gemini 1.5 flash to give a welcoming description of the chosen museum and make the conversation interesting.
+5. Data collected using web scraping from official government sites.
+
 
 ## Team Details
 
@@ -20,8 +27,6 @@ This README provides an overview of the project, including team details, relevan
 - **Live Deployment:** [View Deployment](https://willowy-toffee-89c6b8.netlify.app/)
   (backend deployment is removed due to insufficient aws credits)
   
-**About Project**
-
 **Run locally**
 ## Local Setup Instructions (Write for both windows and macos)
 
