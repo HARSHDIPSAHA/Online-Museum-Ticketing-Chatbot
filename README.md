@@ -57,20 +57,20 @@ source venv/bin/activate
 ``` 
 For Windows, use `venv\Scripts\activate`
 
-### 2. Install the dependencies
+### 3. Install the dependencies
  ```bash
 pip install -r requirements.txt
 ```
-### 3. Setup the Django project (migrate database and create superuser)
+### 4. Setup the Django project (migrate database and create superuser)
  ```bash
 python manage.py migrate
 ```
-### 3. Start the development server
+### 5. Start the development server
  ```bash
 
 python manage.py createsuperuser
 ```
-### 4. Run the server
+### 6. Run the server
  ```bash
 python manage.py runserver
 ```
@@ -92,6 +92,7 @@ npm install
 npm install react-scripts 
 npm install react-router-dom
 ```
+### 3. Start the development server
 ```bash
 npm start
 ```
