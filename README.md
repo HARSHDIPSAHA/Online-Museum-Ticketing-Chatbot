@@ -7,6 +7,7 @@ This README provides an overview of the project, including team details, relevan
 3. Using Machine Learning to neglect spelling errors and GenAI to block hate contents.
 4. Using gemini 1.5 flash to give a welcoming description of the chosen museum and make the conversation interesting.
 5. Data collected using web scraping from official government sites.
+6. Keeping the ticket pdf link active for only 1 min to prevent reuse and ensure data security.
 
 
 ## Team Details
