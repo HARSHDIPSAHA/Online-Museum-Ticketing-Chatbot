@@ -30,6 +30,7 @@ This README provides an overview of the project, including team details, relevan
 
 **Live Deployment:** [View Deployment](https://willowy-toffee-89c6b8.netlify.app/)
   (backend deployment is removed due to insufficient aws credits)
+
   
 **Run locally**
 ## Local Setup Instructions (Write for both windows and macos)
