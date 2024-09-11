@@ -11,10 +11,10 @@ app.use(cors());
 
 // Create a connection to your RDS MySQL instance
 const connection = mysql.createConnection({
-  host: 'mydb.c9iqwkswybrt.eu-north-1.rds.amazonaws.com',
+  host: ' ',
   port: 3306,
   user: 'Aman',
-  password: 'Bunny16@%',
+  password: '',
   database: 'museums'
 });
 
