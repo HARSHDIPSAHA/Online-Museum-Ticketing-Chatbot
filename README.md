@@ -2,12 +2,13 @@ This README provides an overview of the project, including team details, relevan
 
 
 ## About Project
-1. 24*7 multilingual chatbot support.
-2. Recording every person museum selection response and storing it in database to predict which time has most crowd and alert the upcoming travellers.
-3. Using Machine Learning to neglect spelling errors and GenAI to block hate contents.
-4. Using gemini 1.5 flash to give a welcoming description of the chosen museum and make the conversation interesting.
-5. Data collected using web scraping from official government sites.
-6. Keeping the ticket pdf link active for only 1 min to prevent reuse and ensure data security.
+1.Easily accessible and user gets payment done, ticket generation and personalised recommendations- all at a single place.
+2. 24*7 multilingual chatbot support.
+3. Recording every person museum selection response and storing it in database to predict which time has most crowd and alert the upcoming travellers.
+4. Using Machine Learning to neglect spelling errors and GenAI to block hate contents.
+5. Using gemini 1.5 flash to give a welcoming description of the chosen museum and make the conversation interesting.
+6. Data collected using web scraping from official government sites.
+7. Keeping the ticket pdf link active for only 1 min to prevent reuse and ensure data security.
 
 
 ## Team Details
