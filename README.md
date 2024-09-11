@@ -1,7 +1,7 @@
 This README provides an overview of the project, including team details, relevant links, tasks completed, tech stack, key features, and steps to run the project locally.
 
 
-**About Project**
+## About Project
 1. 24*7 multilingual chatbot support.
 2. Recording every person museum selection response and storing it in database to predict which time has most crowd and alert the upcoming travellers.
 3. Using Machine Learning to neglect spelling errors and GenAI to block hate contents.
