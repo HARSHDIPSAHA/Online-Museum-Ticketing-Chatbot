@@ -3,7 +3,7 @@ This README provides an overview of the project, including team details, relevan
 
 ## About Project
 1. Easily accessible through phone and desktop and user gets payment done, ticket generation and personalised recommendations- all at a single place.
-2. 24*7 multilingual chatbot support.
+2. 24*7 multilingual NLP based chatbot support.
 3. Recording every person museum selection response and storing it in database to predict which time has most crowd and alert the upcoming travellers.
 4. Using Machine Learning to neglect spelling errors and GenAI to block hate contents.
 5. Using gemini 1.5 flash to give a welcoming description of the chosen museum and make the conversation interesting.
