@@ -3,10 +3,10 @@ const mysql = require('mysql2');
 
 // Create a connection to your RDS MySQL instance
 const connection = mysql.createConnection({
-  host: 'mydb.c9iqwkswybrt.eu-north-1.rds.amazonaws.com',  // Your RDS endpoint
+  host: '',  // Your RDS endpoint
   port: 3306,   // Default MySQL port
   user: 'Aman', // Your RDS username
-  password: 'Bunny16@%',  // Your RDS password
+  password: '',  // Your RDS password
   database: 'museums'  // Replace with your actual database name
 });
 
