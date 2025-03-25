@@ -48,7 +48,7 @@ Follow these steps to run the project locally
 This project is a Django-based backend for managing diabetes patient data, providing user authentication, patient data handling, and integration with machine learning models for outcome predictions and recommendations.
 ### 1. Clone the repository
  ```bash
-git clone <https://github.com/HARSHDIPSAHA/Online-Museum-Ticketing-Chatbot>
+git clone https://github.com/HARSHDIPSAHA/Online-Museum-Ticketing-Chatbot
 ```
 ### 2. Create and activate a virtual environment
  ```bash
