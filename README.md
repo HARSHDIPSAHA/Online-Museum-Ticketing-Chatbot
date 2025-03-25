@@ -13,7 +13,7 @@ This README provides an overview of the project, including team details, relevan
 
 ## Team Details
 
-**Team Name:** ERROR 404 : CHANGE FOUND?
+**Team Name:** ERROR 404 : CHANGE FOUND
 
 **Project Title** -Online Chatbot based ticketing system
 
@@ -39,7 +39,7 @@ Follow these steps to run the project locally
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/HARSHDIPSAHA/SIH1648_ERROR_404_CHANGE_FOUND
+   git clone https://github.com/HARSHDIPSAHA/Online-Museum-Ticketing-Chatbot
    cd REPO_DIRECTORY
    ```
 
@@ -48,7 +48,7 @@ Follow these steps to run the project locally
 This project is a Django-based backend for managing diabetes patient data, providing user authentication, patient data handling, and integration with machine learning models for outcome predictions and recommendations.
 ### 1. Clone the repository
  ```bash
-git clone <https://github.com/HARSHDIPSAHA/SIH1648_ERROR_404_CHANGE_FOUND>
+git clone <https://github.com/HARSHDIPSAHA/Online-Museum-Ticketing-Chatbot>
 ```
 ### 2. Create and activate a virtual environment
  ```bash
@@ -83,7 +83,7 @@ python manage.py runserver
 
 ### 1. Clone the repository 
 ```bash
-git clone <https://github.com/HARSHDIPSAHA/SIH1648_ERROR_404_CHANGE_FOUND>
+git clone <https://github.com/HARSHDIPSAHA/Online-Museum-Ticketing-Chatbot>
 
 ```
 ### 2. Install the dependencies 
